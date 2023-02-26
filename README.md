@@ -1,2 +1,17 @@
-# AMVConvert
-📼 Convert videos to Actions Semiconductor AVI/AMV format
+> AMV 是[炬力集成](https://zh.wikipedia.org/wiki/炬力集成)电路设计有限公司定义的一种 Motion JPEG 视频格式，是Actions Media Video 的缩写。
+>
+> 该格式诞生于 2005 年，是互联网上比较流行的一种视频格式，用户可以在搜索引擎上找到很多 AMV 视频文件。
+>
+> 这种文件比起 MPEG 类文件的缺点是文件尺寸大，视频质量一般。但能播放这类视频的播放器非常便宜。
+>
+> ---- Wikipedia
+
+此脚本用于把任意视频格式转为炬力集成芯片可播放的 AVI / AMV 格式。
+
+根据视频的横版 / 竖版以及目标格式，选择对应脚本运行即可。
+
+```bash
+$ ./convert_to_amv.sh test.mp4
+```
+
+脚本内把视频尺寸设为了 128x160，如果需要转换为 320x240 等其它尺寸，修改即可。
